@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotosListActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/currentAlbumTextView"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="99dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/addPhotoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Add Photo" />
+
+                <Button
+                    android:id="@+id/deletePhotoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Delete Photo" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/thumbnailImageView"
+                android:layout_width="67dp"
+                android:layout_height="89dp"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/openPhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Open Photo" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(Select a photo to: see its thumbnail, open, delete, or move it to another album)"
+            android:textColor="#686666"
+            android:textSize="9.5sp" />
+
+        <ListView
+            android:id="@+id/photosListView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/movePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:text="Move Photo" />
+
+            <Spinner
+                android:id="@+id/albumSpinner"
+                android:layout_width="152dp"
+                android:layout_height="36dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

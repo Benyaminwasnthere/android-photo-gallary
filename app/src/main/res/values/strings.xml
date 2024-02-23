@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PhotosAndroidV2</string>
+    <string-array name="tag_types">
+        <item>location</item>
+        <item>person</item>
+    </string-array>
+</resources>

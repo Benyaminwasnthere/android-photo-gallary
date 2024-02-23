@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Tag Type Spinner 1 -->
+    <Spinner
+        android:id="@+id/tagTypeSpinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- AutoCompleteTextView for Tag Value 1 -->
+
+    <!-- Tag Type Spinner 2 -->
+    <AutoCompleteTextView
+        android:id="@+id/tagValueEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tagTypeSpinner1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/tagTypeSpinner1"
+        android:hint="Enter Tag Value 1" />
+
+    <Spinner
+        android:id="@+id/tagTypeSpinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagTypeSpinner1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- AutoCompleteTextView for Tag Value 2 -->
+
+    <!-- Checkboxes for AND/OR -->
+    <AutoCompleteTextView
+        android:id="@+id/tagValueEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tagTypeSpinner2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/tagTypeSpinner2"
+        android:hint="Enter Tag Value 2" />
+
+    <CheckBox
+        android:id="@+id/checkedAND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagTypeSpinner2"
+        android:layout_marginTop="16dp"
+        android:text="AND" />
+
+    <CheckBox
+        android:id="@+id/checkedOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/checkedAND"
+        android:layout_alignTop="@id/checkedAND"
+        android:text="OR" />
+
+    <!-- Generate Search Button -->
+
+    <!-- List View for Search Results -->
+
+    <Button
+        android:id="@+id/generateSearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="123dp"
+        android:text="Generate Search" />
+
+    <ListView
+        android:id="@+id/searchResultsListView"
+        android:layout_width="match_parent"
+        android:layout_height="492dp"
+        android:layout_below="@id/generateSearchButton"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="399dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/checkedAND"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:text="(Uncheck both checkboxes to perform single search)"
+        android:textColor="#656464"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="399dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/checkedAND"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:text="(Uncheck both checkboxes to perform single search)"
+        android:textColor="#7E7C7C"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="399dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/checkedAND"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="9dp"
+        android:text="(Double Click a Photo result to maximize it)"
+        android:textColor="#656464"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkedAND"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-107dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/checkedOR"
+        android:text="(Check ONLY one checkbox to perform conjunction or disjunction search)"
+        android:textColor="#676767"
+        android:textSize="10sp" />
+
+</RelativeLayout>
